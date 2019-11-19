@@ -1,0 +1,316 @@
+h3 {
+    margin-bottom: 30px;
+}
+h1, h2, h3 {
+    color: #434343;
+}
+.content_bg_none {
+    background: #F2F2F2;
+    padding: 0;
+    border-right: none;
+    border-bottom: none;
+    h2 {
+        padding-left: 30px;
+    }
+    .row-cards {
+        justify-content: space-between;
+        margin: 30px -15px;
+    }
+}
+.card {
+    padding: 30px 20px;
+    border-top: none;
+    border-left: none;
+    img {
+        transition: transform 1s;
+    }
+    &:hover {
+        box-shadow: 4px 4px 8px 0 rgba(35, 31, 32, .35);
+        cursor: pointer;
+        img {
+            transform: rotate(-5deg);
+        }
+    }
+    h3 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 21px;
+        span {
+            text-transform: lowercase;
+        }
+    }
+    .col-card {
+        padding: 20px;
+    }
+    .order-btn {
+        display: none;
+        justify-content: center;
+        width: 100%;
+        .btn-pink {
+            color: #fff;
+            background-color: #B54285;
+            border-color: #B54285;
+            width: 100%;
+            margin: 0 15px;
+            &:hover {
+                background-color: #DA67AA;
+            }
+        }
+    }
+    .visiblyMob {
+        display: none;
+    }
+    img {
+        margin-left: 30px;
+        box-shadow: 4px 4px 8px 0 rgba(35, 31, 32, .35);
+    }
+    .person {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        margin-top: 20px;
+        font-size: 16px;
+        .icon-personalization {
+            &:before {
+                font-size: 28px;
+            }
+        }
+    }
+    ul {
+        list-style: none;
+        padding-right: 10px;
+        li {
+            display: flex;
+            align-items: center;
+            line-height: 16px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+    }
+    .icon-lowered, .icon-calendar-year, .icon-transfer, .icon-hand-card, .icon-balance-recovery, .icon-calendar, .icon-purse, .icon-making, .icon-payment, .icon-usage-term {
+        &:before {
+            font-size: 36px;
+            margin-right: 10px;
+        }
+    }
+    .icon-tram, .icon-trolley-bus, .icon-bus, .icon-minibus {
+        &:before {
+            font-size: 24px;
+            margin-right: 3px;
+        }
+    }
+    table {
+        font-size: 21px;
+        font-weight: bold;
+        border: none;
+        .blue, .green{
+            tr {
+                border-top: 10px solid #ffffff;
+            }
+        }
+        .magenta, .grey, .yellow {
+            tr {
+                background-color: #F2F2F2;
+                border-top: 10px solid #ffffff;
+            }
+        }
+        th {
+            padding-top: .2rem;
+            padding-bottom: .2rem;
+        }
+        td {
+            border: none;
+            padding-top: .2rem;
+            padding-bottom: .2rem;
+        }
+        span {
+            font-weight: normal;
+        }
+    }
+    .purse {
+        font-size: 21px;
+        font-weight: bold;
+    }
+    .row-purse, .icon-group {
+        padding-left: 10px;
+    }
+    .price {
+        display: flex;
+        font-size: 21px;
+        font-weight: bold;
+        padding-left: 7px;
+    }
+    .minibus {
+        font-size: 21px;
+        font-weight: bold;
+        display: flex;
+        margin-top: 6px;
+        padding-left: 15px;
+        div {
+            line-height: 23px;
+        }
+        span {
+            font-weight: normal;
+        }
+    }
+    .magenta {
+        &:before {
+            color: #B54285;
+        }
+    }
+    .grey {
+        &:before {
+            color: #9FA1A4;
+        }
+    }
+    .blue {
+        &:before {
+            color: #61B3B1;
+        }
+    }
+    .green {
+        &:before {
+            color: #88A661;
+        }
+    }
+    .yellow {
+        &:before {
+            color: #EDBC5E;
+        }
+    }
+    .about-card {
+        background-color: #F7F7F7;
+        margin-bottom: 40px;
+        height: 90%;
+        padding: 20px;
+    }
+
+}
+/* for phones*/
+@media screen and (max-width: 375px) {
+    .content_bg_none {
+        margin: 0;
+        .row-cards {
+            margin: 0;
+        }
+        h2 {
+            margin-left: 0;
+            padding-left: 0;
+        }
+        .card {
+            margin-top: 20px ;
+            .order-btn {
+                display: flex;
+            }
+            .visiblyMob {
+                display: block;
+            }
+            .person {
+                margin-left: 41px;
+            }
+            .icon-personalization {
+                &:before {
+                    font-size: 36px;
+                    margin-right: 10px;
+                }
+            }
+            table {
+                tr {
+                    line-height: 23px;
+                }
+            }
+            .midd {
+                text-align: center;
+                img {
+                    margin-left: 0;
+                }
+            }
+            .row-purse {
+                .col-md-4 {
+                    display: flex;
+                }
+            }
+            .purse {
+                margin-bottom: 20px;
+            }
+            .price {
+                justify-content: space-between;
+                div {
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+}
+/* for tablets*/
+@media screen and (min-width: 376px) and (max-width: 767px) {
+    .content_bg_none {
+        margin: 0;
+        .row-cards {
+            margin: 0;
+        }
+        h2 {
+            margin-left: 0;
+            padding-left: 0;
+        }
+        .card {
+            margin-top: 20px ;
+            padding: 30px 50px;
+            .order-btn {
+                display: flex;
+            }
+            .visiblyMob {
+                display: block;
+            }
+            .person {
+                margin-left: 41px;
+            }
+            .icon-personalization {
+                &:before {
+                    font-size: 36px;
+                    margin-right: 10px;
+                }
+            }
+            .midd {
+                text-align: center;
+                img {
+                    margin-left: 0;
+                }
+            }
+            .row-purse {
+                .col-md-4 {
+                    display: flex;
+                }
+            }
+            .purse {
+                margin-bottom: 20px;
+            }
+            .price {
+                justify-content: space-between;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .content_bg_none {
+        .row-cards {
+            flex-direction: column;
+            margin: 0;
+            .col-md-6.col-card {
+                max-width: 100%;
+                padding: 0;
+                .card {
+                    margin-top: 20px;
+                    .order-btn {
+                        display: flex;
+                    }
+                    .visiblyMob {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

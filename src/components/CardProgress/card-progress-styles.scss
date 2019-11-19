@@ -1,0 +1,264 @@
+%default-shadow {
+    -webkit-box-shadow: 2px 1px 13px -1px rgba(191,191,191,1);
+    -moz-box-shadow: 2px 1px 13px -1px rgba(191,191,191,1);
+    box-shadow: 2px 1px 13px -1px rgba(191,191,191,1);
+}
+
+.card-progress {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    padding-bottom: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px #e1e1e1;
+}
+
+.before-payment-confirm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-progress__container {
+    margin-top: 20px;
+}
+
+.card-progress__header {
+    color: #434343;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1em;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.card-progress__image-wrap {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        border: 1px solid rgba(163, 163, 163, 0.82);
+        //box-shadow: 2px 2px #e1e1e1;
+    }
+}
+
+.card-image {
+    position: relative;
+    @extend %default-shadow;
+}
+
+.person-name {
+    font-weight: bold;
+    position: absolute;
+    left: 14px;
+    top: 142px;
+    line-height: 1.2em;
+    font-size: 12px;
+}
+
+.person-image {
+    position: absolute;
+    left: 14px;
+    top: 46px;
+    width: 70px;
+    height: 94px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.check-ask {
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+    margin: 30px 0 0;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    a {
+        color: #b54285;
+    }
+}
+
+.check-ask__button {
+    /*position: absolute;*/
+    color: #b54285;
+    /*border: none;*/
+    margin-left: .1em;
+    background-color: #f7f7f7;
+    border: 1px solid #c2c3c4;
+    outline: none;
+    max-width: none;
+    transition: background-color, border-color .3s;
+
+    &:hover {
+        background-color: #f9f9f9;
+        border-color: #929497;
+    }
+
+    /*&::before {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*content: '';*/
+    /*border: 1px solid grey;;*/
+    /*}*/
+}
+
+.after-payment-confirm {
+    padding-top: 40px;
+}
+
+.check-btn__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*margin-top: 40px;*/
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.check-btn {
+    display: inline-block;
+    max-width: none;
+    width: auto;
+    padding: 8px 27px;
+    margin: 0 auto;
+}
+
+.card-status__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.payment-status {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.payment-options {
+    max-width: 700px;
+    color: #434343;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 23px;
+}
+
+.pay-btn {
+    margin: 25px 0 35px;
+}
+
+.status-text {
+    color: #434343;
+}
+
+.successful-checked-text {
+    color: #629247;
+
+}
+
+.after-paying-info {
+    color: #434343;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 45px;
+}
+
+@media print {
+    .after-payment-confirm, .before-payment-confirm {
+        display: none;
+    }
+}
+
+.show-data-enter-active {
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.show-data-leave-active {
+    transition: all .5s;
+    /*overflow: hidden;*/
+}
+
+
+.show-data-enter /* .fade-leave-active до версии 2.1.8 */
+{
+    /*opacity: 0;*/
+    /*transform: scaleY(0);*/
+    /*transform-origin: top;*/
+    overflow: hidden;
+    max-height: 0;
+    /*height: 900px;*/
+}
+
+.show-data-enter-to {
+    max-height: 2000px;
+}
+
+.show-data-leave {
+    /*height: 1000px;*/
+    /*max-height: 2500px;*/
+}
+
+.show-data-leave-to {
+    /*<!--transform-origin: top;-->*/
+    /*<!--transform: translateY(-100%);-->*/
+    /*<!--overflow: hidden;-->*/
+    /*max-height: 0;*/
+    opacity: 0;
+}
+
+.hide-check-btn-leave-to {
+    max-height: 0;
+    margin: 0;
+}
+
+.hide-check-btn-leave-active {
+    transition: .5s;
+    overflow: hidden;
+}
+
+.hide-check-btn-leave {
+    max-height: 60px;
+}
+
+.image-wrap {
+    display: flex;
+    justify-content: center;
+
+    //max-width: 540px;
+}
+
+.card-progress__img {
+    max-width: 540px;
+    padding-top: 35px;
+}
+
+.after-payment-confirm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

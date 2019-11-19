@@ -1,0 +1,314 @@
+.content {
+    position: relative;
+
+    h1, h2 {
+        color: #434343;
+    }
+
+    a {
+        .prv_b, .nxt_b {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 400px;
+            z-index: 1000;
+        }
+
+        .prv_b {
+            border: 20px solid transparent;
+            border-right: 20px solid #B54285;
+            left: -5px;
+
+            &:hover {
+                border: 20px solid transparent;
+                border-right: 20px solid #DA67AA;
+            }
+        }
+
+        .nxt_b {
+            border: 20px solid transparent;
+            border-left: 20px solid #B54285;
+            right: -5px;
+
+            &:hover {
+                border: 20px solid transparent;
+                border-left: 20px solid #DA67AA;
+            }
+        }
+    }
+
+    //.col-card {
+    //    padding: 20px;
+    //}
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    img {
+        margin-left: 30px;
+        box-shadow: 4px 4px 8px 0 rgba(35, 31, 32, .35);
+    }
+
+    .person {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        margin-top: 20px;
+        font-size: 16px;
+
+        .icon-personalization {
+            &:before {
+                color: #61B3B1;
+                font-size: 28px;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding-right: 10px;
+
+        li {
+            display: flex;
+            align-items: center;
+            line-height: 16px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+    }
+
+    .icon-lowered, .icon-transfer, .icon-balance-recovery, .icon-calendar, .icon-purse, .icon-making, .icon-payment, .icon-usage-term {
+        &:before {
+            color: #61B3B1;
+            font-size: 36px;
+            margin-right: 10px;
+        }
+    }
+
+    .icon-tram, .icon-trolley-bus, .icon-bus, .icon-minibus {
+        &:before {
+            color: #61B3B1;
+            font-size: 24px;
+            margin-right: 3px;
+        }
+    }
+
+    table {
+        font-size: 21px;
+        font-weight: bold;
+        border: none;
+
+        td {
+            border: none;
+        }
+
+        span {
+            font-weight: normal;
+        }
+    }
+
+    .purse {
+        font-size: 21px;
+        font-weight: bold;
+    }
+
+    .row-purse, .icon-group {
+        padding-left: 10px;
+    }
+
+    .price {
+        display: flex;
+        font-size: 21px;
+        font-weight: bold;
+        padding-left: 7px;
+    }
+
+    .minibus {
+        font-size: 21px;
+        font-weight: bold;
+        display: flex;
+        margin-top: 6px;
+        padding-left: 15px;
+
+        div {
+            line-height: 23px;
+        }
+
+        span {
+            font-weight: normal;
+        }
+    }
+
+    .order-btn {
+        display: block;
+        justify-content: space-between;
+        text-align: center;
+
+        //.btn-pink {
+        //    color: #fff;
+        //    background-color: #B54285;
+        //    border-color: #B54285;
+        //    width: 80%;
+        //    margin-top: 10px;
+        //    //&:hover {
+        //    //    background-color: #DA67AA;
+        //    //}
+        //}
+    }
+}
+
+.student-icons {
+    background-color: transparent;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    margin: 10px 0 0 !important;
+}
+
+/* for phones*/
+@media screen and (max-width: 375px) {
+    .content {
+        .person {
+            margin-left: 41px;
+
+            .icon-personalization {
+                &:before {
+                    font-size: 36px;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        table {
+            tr {
+                line-height: 23px;
+            }
+        }
+
+        .midd {
+            text-align: center;
+
+            img {
+                margin-left: 0;
+            }
+        }
+
+        .row-purse {
+            .col-md-4 {
+                display: flex;
+            }
+        }
+
+        .purse {
+            margin-bottom: 20px;
+        }
+
+        .price {
+            justify-content: space-between;
+
+            div {
+                line-height: 23px;
+            }
+        }
+
+        //.about-card {
+        //    height: auto;
+        //    margin-bottom: 20px;
+        //}
+
+        .order-btn {
+            flex-direction: column;
+
+            .btn-pink {
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+/* for tablets*/
+@media screen and (min-width: 376px) and (max-width: 767px) {
+    .content {
+        padding: 30px 50px;
+
+        .person {
+            margin-left: 41px;
+
+            .icon-personalization {
+                &:before {
+                    font-size: 36px;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .midd {
+            text-align: center;
+
+            img {
+                margin-left: 0;
+            }
+        }
+
+        .row-purse {
+            .col-md-4 {
+                display: flex;
+            }
+        }
+
+        .purse {
+            margin-bottom: 20px;
+        }
+
+        .price {
+            justify-content: space-between;
+        }
+
+        .about-card {
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .order-btn {
+            flex-direction: column;
+
+            .btn-pink {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .content {
+        padding: 30px 50px;
+
+        .row-card {
+            flex-direction: column;
+
+            .col-card {
+                max-width: 100%;
+            }
+        }
+
+        .price {
+            justify-content: space-between;
+        }
+
+        .about-card {
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .order-btn {
+            flex-direction: column;
+
+            .btn-pink {
+                margin-top: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,285 @@
+.confirm-payment {
+    width: 100%;
+}
+
+.container {
+    padding: 10px 30px 36px 70px;
+}
+
+.title {
+    width: 100%;
+    padding-top: 30px;
+
+    p {
+        width: 100%;
+        text-align: center;
+        color: #4f4f4f;
+        font-family: Calibri, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+.rules {
+    width: 100%;
+
+    p {
+        width: 100%;
+        color: #444444;
+        font-family: Calibri, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-indent: 2em;
+    }
+}
+
+.container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal-info {
+    width: 100%;
+}
+
+.personal-info__title {
+    width: 100%;
+
+    p {
+        width: 100%;
+        text-align: center;
+        color: #444444;
+        font-family: Calibri, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+%border {
+    border: 1px solid #a7a7a7;
+}
+
+.person {
+    width: 100%;
+    display: flex;
+}
+
+.person-info, .representative-info, .address {
+    width: 100%;
+    @extend %border;
+    padding: 5px 5px 5px 17px;
+
+    p {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        line-height: 1.1em;
+        margin-top: 4px;
+    }
+}
+
+.confirm-payment__image-wrap {
+    width: 100%;
+    max-width: 170px;
+    @extend %border;
+    display: flex;
+    align-items: stretch;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 10px;
+        max-height: 120px;
+    }
+}
+
+%attentionBorder {
+    border: 1px solid #7b7b7b;
+}
+
+.attention {
+    width: 100%;
+    display: flex;
+    margin-top: 18px;
+
+    p {
+        margin: 0;
+        padding: 0;
+        line-height: 1.2em;
+        color: #444445;
+        font-family: Calibri, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+.attention__title {
+    flex-grow: 1;
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    @extend %attentionBorder;
+}
+
+.attention__info {
+    flex-grow: 5;
+    @extend %attentionBorder;
+    padding: 8px;
+}
+
+.confirm {
+    width: 100%;
+
+    p {
+        color: #444444;
+        font-family: Calibri, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.3em;
+
+    }
+}
+
+.confirm-text {
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+    text-indent: 40px;
+}
+
+.signed-person {
+    display: flex;
+}
+
+.signed-person__name {
+    margin-left: 80px;
+}
+
+.payment {
+    width: 100%;
+
+    color: #444444;
+    font-family: Calibri, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+
+    h5 {
+        font-size: 14px;
+    }
+
+    p {
+        margin-top: 10px;
+        line-height: 1.1em;
+    }
+}
+
+.qr-code {
+    border: 1px solid #898687;
+    display: flex;
+    align-items: stretch;
+    padding: 10px 30px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.payment-info {
+    width: 100%;
+    border: 1px solid #898687;
+    padding: 10px 22px;
+}
+
+.payment-flow {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        width: 100%;
+        line-height: 1.3em;
+
+        &::before {
+            content: '-';
+            float: left;
+        }
+    }
+}
+
+.control-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 20px;
+}
+
+.print-btn {
+    background-color: #fff;
+    color: #444;
+    border: 1px solid #b44284;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.pay-btn {
+    background-color: #b44284;
+    border: 1px solid #b44284;
+    color: #efeeee;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-left: 30px;
+    }
+    .person {
+        flex-direction: column-reverse;
+    }
+    .confirm-payment__image-wrap {
+        max-width: 100%;
+
+        img {
+            max-height: 150px;
+        }
+    }
+    .attention {
+        flex-direction: column;
+    }
+    .attention__title {
+        padding: 10px;
+
+        p {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .payment {
+        flex-direction: column;
+    }
+}
+
+@media print {
+    .confirm-payment {
+        margin-top: 1rem;
+        overflow: visible !important;
+        width: 100% !important;
+        height: auto !important;
+        /*height: calc(100% - 3rem)*/
+    }
+
+    .control-buttons {
+        display: none;
+    }
+}

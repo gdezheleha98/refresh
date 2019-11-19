@@ -1,0 +1,30 @@
+h5 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.table.table-bordered {
+    th {
+        text-align: center;
+        vertical-align: middle;
+        &:first-child {
+            min-width: 75px;
+        }
+    }
+    td {
+        vertical-align: middle;
+        &:first-child {
+            text-align: center;
+        }
+        &:last-child {
+            text-align: center;
+        }
+    }
+    .red {
+        color: #c1272d;
+    }
+    .green_bg {
+        background-color: #e2efda;
+        text-align: center;
+    }
+}
+

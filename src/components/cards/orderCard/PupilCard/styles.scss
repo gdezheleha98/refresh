@@ -1,0 +1,63 @@
+select {
+    moz-appearance: menulist;
+    -webkit-appearance: menulist;
+}
+
+.sorry-row {
+    align-items: center;
+
+    .sad-cat {
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.form-control:focus {
+    border-color: #CED4DA;
+    box-shadow: 0 0 0 0.2rem rgba(206, 212, 218, .25);
+}
+
+.pilg {
+    .col-md-12, .col-md-6 {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
+.pupil-certificate-series__info {
+    margin-top: -1rem;
+}
+
+/*papap*/
+.papap {
+    text-align: center;
+    font-size: 24px;
+}
+
+.user-address {
+    width: 100%;
+}
+
+/* for phones*/
+@media screen and (max-width: 375px) {
+    .information {
+        width: 100%;
+    }
+}
+
+/* for tablets*/
+@media screen and (min-width: 376px) and (max-width: 767px) {
+    .information {
+        width: 100%;
+    }
+}
+
+.error-msg {
+    float: left;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+

@@ -1,0 +1,93 @@
+.about-card {
+    padding: 20px;
+    line-height: 1.4em;
+
+    span {
+        font-weight: bold;
+    }
+
+    a {
+        color: #B54285;
+    }
+}
+
+.order-card-flow {
+    width: calc(100% - 1rem);
+    margin: 0;
+    margin-left: 1rem;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.3em;
+
+    > li {
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    li:first-child {
+        margin: 0;
+    }
+
+    .li-inner {
+        width: 100%;
+        font-weight: normal;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    .student-icons {
+        display: flex;
+        align-items: center;
+
+        .student-icons__img-wrap {
+            width: 100%;
+            max-width: 71px;
+            margin-right: 10px;
+        }
+
+        img {
+            background-color: transparent;
+            box-shadow: none;
+            margin: 0;
+        }
+
+    }
+
+    .docs-sublist__header {
+        margin: 1rem 0 0;
+    }
+
+    .docs-sublist {
+        margin: 0 0 0 1px;
+        padding: 0;
+        line-height: 1.3em;
+
+        li {
+            margin: 0;
+            padding: 0;
+            line-height: 1.2em;
+        }
+    }
+}
+
+.btn {
+    margin-top: 20px;
+    font-size: 14px;
+    //max-width: 280px;
+}
+
+.col-card {
+    padding: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .about-card {
+        padding: 20px 0;
+    }
+
+    .col-card {
+        padding: 20px 0;
+    }
+}

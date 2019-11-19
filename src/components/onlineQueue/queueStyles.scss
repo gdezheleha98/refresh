@@ -1,0 +1,329 @@
+.online_queue {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .row {
+        width: 100%;
+        background-color: #fff;
+        padding: 50px 69px;
+        font-family: 'Century Gothic';
+        display: flex;
+        flex-direction: column;
+        //flex-wrap: nowrap;
+    }
+
+    .queue_content {
+        padding: 20px 20px;
+        width: 100%;
+        background-color: #f7f7f7;
+        border: 1px solid #e4e4e4;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .queue_progress_wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: -24px;
+    }
+
+    .queue_progress {
+        width: 100%;
+        max-width: 300px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+
+        background-color: #b9babc;
+        position: relative;
+        height: 8px;
+        padding: 0px 4px;
+
+        display: flex;
+        justify-content: space-between;
+
+        z-index: 2;
+
+        //margin-top: -24px;
+    }
+
+    .first, .second, .third {
+
+        p {
+            margin: 0;
+            padding: 0;
+            padding-top: 6px;
+            line-height: 1em;
+            color: #ffffff;
+            font-family: Bahnschrift;
+            font-size: 14px;
+        }
+
+
+        background-color: #95c83d;
+        height: 26px;
+        width: 26px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        //align-items: center;
+        //padding-top: 3px;
+        margin-top: -9px;
+        z-index: 5;
+        cursor: pointer;
+        &:hover {
+            padding: 0;
+            margin: 0;
+            background-image: url(../../assets/CircleArrowRight.svg);
+            background-repeat: no-repeat;
+
+            //-webkit-background-size: 33px 33px;
+            //background-size: 33px 33px;
+
+            -webkit-background-size: 33px 31px;
+            background-size: 33px 31px;
+
+            background-color: transparent;
+            height: 33px;
+            width: 33px;
+            margin-top: -12px;
+
+            margin-left: 6px;
+
+
+            p {
+                padding-top: 9px;
+                margin-left: -6px;
+            }
+        }
+
+    }
+
+    .first {
+        &:hover {
+            margin-left: -1px;
+            margin-right: -6px;
+        }
+    }
+
+    .third {
+        &:hover {
+            margin-right: -6px;
+            margin-left: -1px;
+        }
+    }
+
+    .show_progress {
+        position: absolute;
+        background-image: linear-gradient(to right, #87b03f, #96c83f);
+
+        //float: left;
+        height: 100%;
+        //z-index: 1;
+
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+
+        left: 0;
+    }
+
+    .progress_first {
+        .show_progress {
+            width: 10%;
+        }
+        .first {
+            padding: 0;
+            margin: 0;
+            background-image: url(../../assets/CircleArrowDown.svg);
+            background-repeat: no-repeat;
+
+            -webkit-background-size: 33px 33px;
+            background-size: 33px 33px;
+
+            background-color: transparent;
+            height: 33px;
+            width: 33px;
+            margin-top: -10px;
+
+            margin-left: -3px;
+
+
+            p {
+                padding-top: 7px;
+            }
+
+            &:hover {
+                padding: 0;
+                margin: 0;
+                background-image: url(../../assets/CircleArrowDown.svg);
+                background-repeat: no-repeat;
+
+                -webkit-background-size: 33px 33px;
+                background-size: 33px 33px;
+                //
+                //-webkit-background-size: 33px 31px;
+                //background-size: 33px 31px;
+
+                background-color: transparent;
+                height: 33px;
+                width: 33px;
+                margin-top: -10px;
+
+                margin-left: -3px;
+
+
+                p {
+                    padding-left: 6px;
+                    padding-top: 7px;
+                }
+            }
+        }
+
+    }
+
+    .progress_second {
+        .show_progress {
+            width: 50%;
+        }
+
+        .second {
+            padding: 0;
+            margin: 0;
+            background-image: url(../../assets/CircleArrowDown.svg);
+            background-repeat: no-repeat;
+
+            -webkit-background-size: 33px 33px;
+            background-size: 33px 33px;
+
+            background-color: transparent;
+            height: 33px;
+            width: 33px;
+            margin-top: -10px;
+
+
+            p {
+                padding-top: 7px;
+            }
+
+            &:hover {
+                padding: 0;
+                margin: 0;
+                background-image: url(../../assets/CircleArrowDown.svg);
+                background-repeat: no-repeat;
+
+                -webkit-background-size: 33px 33px;
+                background-size: 33px 33px;
+                //-webkit-background-size: 33px 31px;
+                //background-size: 33px 31px;
+
+                background-color: transparent;
+                height: 33px;
+                width: 33px;
+                margin-top: -10px;
+
+                margin-left: 0px;
+
+
+                p {
+                    padding-left: 6px;
+                    padding-top: 7px;
+                }
+            }
+        }
+
+    }
+
+    .progress_third {
+        .show_progress {
+            width: 100%;
+        }
+        .third {
+            padding: 0;
+            margin: 0;
+            background-image: url(../../assets/CircleArrowDown.svg);
+            background-repeat: no-repeat;
+
+            -webkit-background-size: 33px 33px;
+            background-size: 33px 33px;
+
+            background-color: transparent;
+            height: 33px;
+            width: 33px;
+            margin-top: -10px;
+
+            margin-right: -3px;
+            margin-left: -3px;
+
+            p {
+                padding-top: 7px;
+            }
+
+            &:hover {
+                padding: 0;
+                margin: 0;
+                background-image: url(../../assets/CircleArrowDown.svg);
+                background-repeat: no-repeat;
+
+                -webkit-background-size: 33px 33px;
+                background-size: 33px 33px;
+
+                background-color: transparent;
+                height: 33px;
+                width: 33px;
+                margin-top: -10px;
+
+                margin-left: -3px;
+                margin-right: -3px;
+
+
+                p {
+                    padding-left: 6px;
+                    padding-top: 7px;
+                }
+            }
+        }
+
+    }
+
+
+    .error-msg {
+        float: left;
+        width: 100%;
+        margin-top: .25rem;
+        font-size: 80%;
+        color: #dc3545;
+    }
+
+
+
+    @media screen and (max-width: 580px) {
+        .row {
+            padding: 50px 25px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .row {
+            padding: 50px 10px;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        .row {
+            padding: 50px 0px;
+            margin: 0;
+        }
+        .queue_content {
+            padding: 20px 10px;
+        }
+    }
+}

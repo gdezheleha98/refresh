@@ -1,0 +1,83 @@
+body {
+    background: #F2F2F2;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    color: #434343;
+}
+
+.error-msg {
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.content {
+    margin: 15px;
+    padding: 30px;
+    background: #ffffff;
+    width: 100%;
+    border-bottom: 2px solid - #DEDEDE;
+    border-right: 2px solid - #DEDEDE;
+    border-radius: 5px;
+}
+.news-img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.italic-list {
+    font-style: italic;
+}
+h1 {
+    text-transform: uppercase;
+    color: #C33D83;
+}
+h1, h2, h3, h4, h5 {
+    font-family: Century Gothic, Arial, sans-serif;
+    font-weight: bold;
+}
+/* for phones*/
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    h3 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    h5 {
+        font-size: 1rem;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .content {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+    }
+}
+
+/* for tablets*/
+@media screen and (min-width: 376px) and (max-width: 767px) {
+    h1 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    h3 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    h5 {
+        font-size: 1rem;
+        text-align: justify;
+    }
+}

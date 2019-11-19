@@ -1,0 +1,194 @@
+ @font-face {
+     font-family: 'icomoon';
+     src:  url('../assets/fonts/icomoon.eot?6re7d3');
+     src:  url('../assets/fonts/icomoon.eot?6re7d3#iefix') format('embedded-opentype'),
+     url('../assets/fonts/icomoon.ttf?6re7d3') format('truetype'),
+     url('../assets/fonts/icomoon.woff?6re7d3') format('woff'),
+     url('../assets/fonts/icomoon.svg?6re7d3#icomoon') format('svg');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+ //@font-face {
+ //    font-family: 'Century Gothic';
+ //    src: url('../assets/fonts/CenturyGothic.eot');
+ //    src: url('../assets/fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+ //    url('../assets/fonts/CenturyGothic.woff') format('woff'),
+ //    url('../assets/fonts/CenturyGothic.ttf') format('truetype');
+ //    font-weight: normal;
+ //    font-style: normal;
+ //}
+ //
+ //@font-face {
+ //    font-family: 'Calibri';
+ //    src: url('../assets/fonts/Calibri-Light.eot');
+ //    src: url('../assets/fonts/Calibri-Light.eot?#iefix') format('embedded-opentype'),
+ //    url('../assets/fonts/Calibri-Light.woff') format('woff'),
+ //    url('../assets/fonts/Calibri-Light.ttf') format('truetype');
+ //    font-weight: normal;
+ //    font-style: normal;
+ //}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-thin-menu:before {
+    content: "\e900";
+}
+.icon-address:before {
+    content: "\e901";
+    color: #4f4f4f;
+}
+.icon-balance-recovery:before {
+    content: "\e902";
+    color: #5d5d5d;
+}
+.icon-bus:before {
+    content: "\e903";
+    color: #5d5d5d;
+}
+.icon-calendar:before {
+    content: "\e904";
+    color: #5d5d5d;
+}
+.icon-calendar-year:before {
+    content: "\e905";
+    color: #5d5d5d;
+}
+.icon-email-address:before {
+    content: "\e906";
+    color: #4f4f4f;
+}
+.icon-facebook-background:before {
+    content: "\e907";
+    color: #5d5d5d;
+}
+.icon-facebook-letter:before {
+    content: "\e908";
+    color: #5d5d5d;
+}
+.icon-hand-card:before {
+    content: "\e909";
+    color: #5d5d5d;
+}
+.icon-lnstagram:before {
+    content: "\e90a";
+    color: #5d5d5d;
+}
+.icon-lowered:before {
+    content: "\e90b";
+    color: #5d5d5d;
+}
+.icon-making:before {
+    content: "\e90c";
+    color: #5d5d5d;
+}
+.icon-menu:before {
+    content: "\e90d";
+    color: #5d5d5d;
+}
+.icon-minibus:before {
+    content: "\e90e";
+    color: #5d5d5d;
+}
+.icon-mobile-phone:before {
+    content: "\e90f";
+    color: #4f4f4f;
+}
+.icon-one:before {
+    content: "\e910";
+    color: #5d5d5d;
+}
+.icon-one-fill:before {
+    content: "\e911";
+    color: #5d5d5d;
+}
+.icon-order:before {
+    content: "\e912";
+    color: #5d5d5d;
+}
+.icon-payment:before {
+    content: "\e913";
+    color: #5d5d5d;
+}
+.icon-personalization:before {
+    content: "\e914";
+    color: #5d5d5d;
+}
+.icon-price-tag:before {
+    content: "\e915";
+    color: #5d5d5d;
+}
+.icon-price-tag-erect:before {
+    content: "\e916";
+    color: #5d5d5d;
+}
+.icon-private-office:before {
+    content: "\e917";
+    color: #5d5d5d;
+}
+.icon-purse:before {
+    content: "\e918";
+    color: #5d5d5d;
+}
+.icon-queue:before {
+    content: "\e919";
+    color: #5d5d5d;
+}
+.icon-refill:before {
+    content: "\e91a";
+    color: #5d5d5d;
+}
+.icon-ride:before {
+    content: "\e91b";
+    color: #5d5d5d;
+}
+.icon-telephone-receiver:before {
+    content: "\e91c";
+    color: #5d5d5d;
+}
+.icon-three:before {
+    content: "\e91d";
+    color: #5d5d5d;
+}
+.icon-three-fill:before {
+    content: "\e91e";
+    color: #5d5d5d;
+}
+.icon-top-up-card:before {
+    content: "\e91f";
+    color: #5d5d5d;
+}
+.icon-tram:before {
+    content: "\e920";
+    color: #5d5d5d;
+}
+.icon-transfer:before {
+    content: "\e921";
+    color: #5d5d5d;
+}
+.icon-trolley-bus:before {
+    content: "\e922";
+    color: #5d5d5d;
+}
+.icon-two:before {
+    content: "\e923";
+    color: #5d5d5d;
+}
+.icon-two-fill:before {
+    content: "\e924";
+    color: #5d5d5d;
+}
+.icon-usage-term:before {
+    content: "\e925";
+    color: #5d5d5d;
+}

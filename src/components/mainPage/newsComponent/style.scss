@@ -1,0 +1,12 @@
+.content {
+    h2 {
+        color: #C33D83;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .content {
+        text-align: justify;
+    }
+}

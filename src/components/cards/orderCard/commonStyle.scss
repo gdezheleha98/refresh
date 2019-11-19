@@ -1,0 +1,232 @@
+
+.error-msg {
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.hints {
+    font-size: 80%;
+    color: #434343;
+    margin-bottom: 0;
+}
+
+.component-container {
+    display: flex;
+    width: 100%;
+}
+
+.form-group {
+    padding: 0 5px;
+    width: 100%;
+}
+
+.student-card {
+    padding: 0;
+}
+
+.municipal-card {
+    padding: 0;
+}
+
+.pupil-card {
+    padding: 0;
+}
+
+//.privilege-card {
+//    background-color: #eaeaea;
+//}
+
+.municipal-card {
+    padding: 0;
+}
+
+.btn {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: calc(100% - 50px);
+    margin: 20px 25px 0;
+    padding: 8px 0;
+
+    color: #efefef;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+
+}
+
+.btn-pink {
+    background-color: #b54285;
+    color: #efefef;
+
+    &:hover {
+        background-color: #d967a7;
+        color: #efefef;
+    }
+}
+
+.btn-save {
+    margin-top: 30px;
+}
+
+.after-paying {
+    color: #434343;
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-weight: 400;
+    //max-width: 250px;
+    width: 100%;
+    line-height: 1.1em;
+    padding: 0 10px;
+    margin-top: 0;
+}
+
+.registration-data-header {
+    color: #434343;
+}
+
+.official-document-header {
+    color: #434343;
+}
+
+.privilege-document-mb {
+    margin-bottom: 15px;
+}
+
+.personal-data-mb {
+    margin-bottom: 20px;
+}
+
+.official-document-mb {
+    margin-bottom: 13px;
+}
+
+.official-document, .privilege-document, .representor-personal-data {
+    margin-bottom: 15px;
+}
+
+.allow-personal-data {
+    padding: 0 20px;
+}
+
+.asterisk::after {
+    content: "*";
+    color: #b44284;
+    font-family: Calibri;
+    font-weight: 400;
+    position: relative;
+    left: 0;
+}
+
+.block-header {
+    position: relative;
+    /*margin-top: 16px;*/
+    background-color: #F2F2F2;
+    padding: 3px 7px 0;
+    z-index: 1;
+    /*margin-bottom: 0;*/
+    bottom: -8px;
+    color: #b44284;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-left: 20px;
+
+    &::after {
+        height: 18px;
+        content: '';
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        border: 1px solid #c2c3c4;
+        width: calc(100% + 2px);
+        border-bottom: none;
+        background-color: #f2f2f2;
+        z-index: -1;
+        -webkit-border-radius: 5px 5px 0 0;
+        -moz-border-radius: 5px 5px 0 0;
+        border-radius: 5px 5px 0 0;
+    }
+}
+
+.personal-data, .official-document, .representor-personal-data, .privilege-document, .registration-data, .image-wrap {
+    border: 1px solid #c2c3c4;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    padding: 15px 5px 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #f2f2f2;
+    /*padding: 15px 12px 12px;*/
+    /*&:first-child {*/
+    /*margin-top: 15px;*/
+    /*}*/
+}
+
+.official-document, .representor-personal-data, .privilege-document, .registration-data, .image-wrap {
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+}
+
+.image-wrap-header {
+    background-color: #f7f7f7;
+    color: #434343;
+
+    &::after {
+        background-color: #f7f7f7;
+    }
+}
+
+.privilege-document-header {
+    display: block;
+    bottom: -21px;
+    margin-right: 15px;
+    line-height: 1.1em;
+    color: #434343;
+    background-color: #f7f7f7;
+
+    &::after {
+        background-color: #f7f7f7;
+    }
+}
+
+.official-document-header {
+    color: #434343;
+    background-color: #f7f7f7;
+
+    &::after {
+        background-color: #f7f7f7;
+    }
+}
+
+.representor-personal-data-header {
+    background-color: #f7f7f7;
+
+    &::after {
+        background-color: #f7f7f7;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .component-container {
+        flex-direction: column;
+    }
+    //.privilege-document-header {
+    //    bottom: -21px;
+    //}
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        margin: 0;
+        //padding-left: 0;
+        //padding-right: 0;
+    }
+}

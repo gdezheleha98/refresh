@@ -1,0 +1,38 @@
+.content {
+    h1 {
+        margin-bottom: 30px;
+    }
+    h2 {
+        color: #C33D83;
+        font-weight: bold;
+    }
+    .news {
+        margin: 0 20px;
+        a {
+            color: #4F4F4F;
+        }
+        ul {
+            margin: 0;
+            font-style: italic;
+        }
+        p {
+            margin-bottom: 0;
+        }
+        img {
+            margin-bottom: 5px;
+        }
+    }
+    hr {
+        width: 100%;
+    }
+}
+/* for phones*/
+@media screen and (max-width: 375px) {
+    .content {
+        text-align: justify;
+    }
+}
+/* for tablets*/
+@media screen and (min-width: 376px) and (max-width: 767px) {
+
+}

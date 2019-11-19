@@ -1,0 +1,149 @@
+.sorry-row {
+    align-items: center;
+
+    .sad-cat {
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.check {
+    text-align: center;
+
+    .form-check-inline {
+        align-items: flex-start;
+
+        .form-check-input {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .form-check-label {
+        margin-bottom: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+}
+
+.information {
+    background-color: #eaeaea;
+    padding: 20px;
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+
+    .form-control:focus {
+        border-color: #CED4DA;
+        box-shadow: 0 0 0 0.2rem rgba(206, 212, 218, .25);
+    }
+
+    .pilg {
+        .col-md-12, .col-md-6 {
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+    }
+
+    .datepicker {
+        padding: 0;
+    }
+
+    .inputPhoto {
+        margin: 20px 0;
+        justify-content: center;
+
+        img {
+            margin-bottom: 20px;
+            // width: 62px !important;
+        }
+
+        label {
+            width: 100%;
+            float: left;
+            position: relative;
+
+            button {
+                width: 100%;
+                float: left;
+            }
+
+            input[type=file] {
+                position: absolute;
+                top: 0;
+                right: 0;
+                //min-width: 100%;
+                //min-height: 100%;
+                //font-size: 100px;
+                width: 100%;
+                float: left;
+                height: 100%;
+                text-align: right;
+                filter: alpha(opacity=0);
+                opacity: 0;
+                outline: none;
+                background: white;
+                cursor: inherit;
+                display: block;
+            }
+        }
+    }
+
+    .btn-pink {
+        color: #fff;
+        background-color: #B54285;
+        border-color: #B54285;
+        width: 100%;
+
+        &:hover {
+            background-color: #DA67AA;
+        }
+    }
+}
+
+/*papap*/
+.papap {
+    text-align: center;
+    font-size: 24px;
+}
+
+/* for phones*/
+@media screen and (max-width: 500px) {
+    .information {
+        width: 100%;
+        padding: 20px 5px;
+    }
+}
+
+/* for tablets*/
+@media screen and (min-width: 376px) and (max-width: 767px) {
+    .information {
+        width: 100%;
+    }
+}
+
+.error-msg {
+    float: left;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.choose-card-modal {
+    width: 100%;
+}
+

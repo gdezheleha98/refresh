@@ -1,0 +1,36 @@
+h1 {
+    margin-bottom: 30px;
+}
+.content {
+    h2 {
+        color: #C33D83;
+        font-weight: bold;
+    }
+    table {
+        .madgenta {
+            background-color: #efe6eb;
+        }
+        .green {
+            background-color: #e2efda;
+        }
+        .blue {
+            background-color: #e1efee;
+        }
+        .gray {
+            background-color: #f2f2f2;
+        }
+        th {
+            vertical-align: middle;
+            text-align: center;
+            font-weight: bold;
+        }
+        .text-bold {
+            font-weight: bold;
+        }
+        td {
+            span {
+                font-weight: normal;
+            }
+        }
+    }
+}

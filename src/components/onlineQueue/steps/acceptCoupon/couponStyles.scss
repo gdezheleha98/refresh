@@ -1,0 +1,243 @@
+
+.accept_coupon_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fs-18 {
+    font-size: 16px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.accept_coupon {
+    width: 100%;
+    max-width: 313px;
+
+    p, h3, h4 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-family: Calibri;
+        color: #434343;
+        line-height: 1em;
+        /*font-size: 14px;*/
+    }
+
+    .coupon_header {
+        text-align: left;
+        font-family: "Century Gothic";
+        font-size: 16px;
+        font-weight: 700;
+        /*line-height: 27px;*/
+        padding-top: 30px;
+        padding-bottom: 11px;
+    }
+
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
+    .coupon_data {
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #cacaca;
+        -webkit-box-shadow: 3px 3px 4px rgba(35, 31, 32, 0.4);
+        -moz-box-shadow: 3px 3px 4px rgba(35, 31, 32, 0.4);
+        box-shadow: 3px 3px 4px rgba(35, 31, 32, 0.4);
+    }
+
+    .welcome {
+        padding: 18px 0 10px;
+    }
+
+    .coupon_details {
+        margin-top: 15px;
+        /*line-height: 16px;*/
+        padding: 0 30px;
+    }
+
+    .pin_text {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 27px;
+    }
+
+    .pin_number {
+        margin-top: 10px;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .user_name, .user_phone {
+        margin-top: 23px;
+        display: flex;
+        margin: 0;
+        padding: 23px 14px 12px 5px;
+
+        h4 {
+            padding: 0;
+            margin: 0;
+            margin-left: 10px;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+        }
+    }
+
+    .user_phone {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .coupon_default_style {
+        padding: 14px 18px 0;
+        font-size: 14px;
+        font-weight: 700;
+
+    }
+
+    .coupon_write {
+        color: #000000;
+        font-weight: 700;
+        font-size: 14px;
+        margin-top: 5px;
+        /*line-height: 16px;*/
+        font-weight: 700;
+    }
+
+    .coupon_date, .coupon_date_time {
+        margin-top: 16px;
+        /*line-height: 20px;*/
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .coupon_date_time {
+        margin-top: 5px;
+    }
+
+    .coupon_default_style {
+        padding: 14px 18px 0;
+        font-size: 14px;
+        font-weight: 700;
+
+    }
+
+    .office {
+        padding-top: 8px;
+    }
+
+    .coupon_confirm {
+        margin: 8px 20px 0;
+        border: 1px solid #ba4e8d;
+        padding: 8px 14px;
+
+        p {
+            font-size: 16px;
+            font-weight: 700;
+            /*line-height: 20px;*/
+        }
+    }
+
+    .coupon_giving_time {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 20px;
+
+        p {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+    }
+
+    .save {
+        color: #efefef;
+        background-color: #b54285;
+        //border: none;
+        //-webkit-border-radius: 5px;
+        //-moz-border-radius: 5px;
+        //border-radius: 5px;
+        margin: 23px 16px 0;
+        width: calc(100% - 32px);
+        //padding: 8px;
+        //line-height: 1em;
+    }
+
+    .email_address {
+        margin-top: 15px;
+        width: 100%;
+        border: 1px solid #dedede;
+        padding: 10px 14px;
+        h4 {
+            color: #434343;
+            font-family: "Century Gothic";
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1em;
+            text-align: left;
+        }
+        input {
+            width: 100%;
+            border: 1px solid #bebebe;
+            margin-top: 4px;
+            height: 37px;
+            color: #434343;
+            font-family: Calibri;
+            font-size: 18px;
+            padding: 10px;
+            &::placeholder {
+
+                color: #434343;
+                font-family: Calibri;
+                font-size: 18px;
+            }
+        }
+        button {
+            //-webkit-border-radius: 5px;
+            //-moz-border-radius: 5px;
+            //border-radius: 5px;
+            //border: 1px solid #b54285;
+            //padding: 8px;
+            color: #434343;
+            //font-family: "Century Gothic";
+            //font-size: 16px;
+            //font-weight: 700;
+            background-color: #fff;
+            width: 100%;
+            //line-height: 1em;
+            margin-top: 8px;
+        }
+    }
+    .print {
+        color: #434343;
+        background-color: #fff;
+        margin: 8px 16px 0;
+        width: calc(100% - 32px);
+    }
+    button {
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        border: 1px solid #b54285;
+        padding: 8px;
+        font-family: "Century Gothic";
+        font-size: 16px;
+        font-weight: 700;
+        width: 100%;
+        line-height: 1em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        &:hover {
+            background-color: #d967a7;
+        }
+    }
+}

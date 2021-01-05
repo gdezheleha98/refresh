@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "awesome-mask": "^1.1.1",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "core-js": "^3.3.2",
     "inputmask": "^4.0.6",
     "jquery": "^3.4.1",
@@ -38,7 +38,7 @@
     "@vue/cli-service": "^4.0.0",
     "@vue/eslint-config-standard": "^4.0.0",
     "awesome-mask": "^1.1.1",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "babel-eslint": "^10.0.3",
     "bootstrap": "^4.3.1",
     "cli-plugin-test": "^1.0.0",
